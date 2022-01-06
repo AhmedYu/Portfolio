@@ -2,20 +2,10 @@
 <html lang="en">
 
     <head>
-        <title>Ahmedmyusuf.com</title>
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <?php require_once "links.php";
+    ?>
+    
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="simple.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <script>
-            window.addEventListener('DOMContentLoaded', function() {
-                let icons = document.querySelector(".icons");
-                console.log(icons.childNodes[5]);
-            })
-        </script>
-        <script src="https://kit.fontawesome.com/ce3f242d1c.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
