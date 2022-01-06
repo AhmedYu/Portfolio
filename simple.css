@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400&display=swap");
+
+:root {
+  --primary: rgb(233, 218, 225);
+  --3r-color: #d0e0f3;
+  --secondary: #1e1e1e;
+  --blue-color: #306fdb;
+  --text-color: #ffffff;
+  --optional-color: #cdb4db;
+  --content_font: "Montserrat", sans-serif;
+  --headline: "Luckiest Guy", cursive;
+}
+
+/* fotst */
+/* font-family: 'IM Fell Great Primer', serif;  
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+/* css reset starts */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: var(--content_font);
+}
+
+ol,
+ul {
+  list-style: none;
+  font-family: var(--content_font);
+  font-weight: lighter;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ending css reset */
+/* header starts */
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--3r-color);
+  height: 60px;
+  background-color: var(--secondary);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 5px 20px;
+}
+
+header nav {
+  height: 60px;
+  width: 55%;
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+nav ul li a {
+  /* padding-top: 10px; */
+  margin-top: 10px;
+  text-decoration: none;
+  /* height: 50px; */
+  line-height: 60px;
+  font-size: 1.2rem;
+  color: var(--3r-color);
+  display: inline-block;
+}
+
+header h1 {
+  letter-spacing: 2px;
+  line-height: 100%;
+  font-size: 1.3rem;
+  font-family: var(--headline);
+}
+
+nav a:hover {
+  counter-reset: var(--optional-color);
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+/* header ends */
+/* wrapper starts here */
+
+#wrapper {
+  width: 99%;
+  margin: 10px auto;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr 5fr;
+  grid-template-areas: " profile_left profile_left  right_column" "profile_left  profile_left  right_column  " "profile_left  profile_left  right_column ";
+  column-gap: 10px;
+}
+
+/* wrapper ends here */
+
+body {
+  background-color: lightgray;
+}
+
+.projct-section img {
+  max-width: 100%;
+}
+
+.profile_left {
+  background-color: white;
+  grid-area: profile_left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile_left img {
+  width: 100%;
+  height: auto;
+}
+
+div .photo {
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.profile_left span {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: white;
+  font-size: 1.4rem;
+  background-color: black;
+}
+
+.profile .fa-laptop-code {
+  color: white;
+}
+
+div .profile_left {
+  display: flex;
+}
+
+.intro p {
+  width: 96%;
+  padding: 10px;
+  font-family: var(--content_font);
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.intro p::first-letter {
+  color: var(--blue-color);
+  size: 1.2rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.intro h2 {
+  text-align: center;
+  color: rgb(7, 71, 73);
+  font-weight: bolder;
+}
+
+/* skill  */
+
+.skills {
+  width: 100%;
+  margin: 20px auto;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.skills ul li {
+  width: 200px;
+}
+
+.btn-resume a {
+  text-decoration: none;
+  color: var(--3r-color);
+  margin: 10px auto;
+  transition: background-color 0.8s;
+}
+
+.btn-resume {
+  margin: 20px auto;
+  width: 117px;
+  height: 30px;
+  background-color: var(--blue-color);
+  color: var(--3r-color);
+  align-self: center;
+  box-shadow: 2px 1px 2px #888888;
+  border-radius: 10%;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  transition: background-color 0.8s;
+}
+
+section .btn-resume:hover {
+  background-color: var(--3r-color);
+  color: var(--secondary);
+  text-decoration: none;
+  animation-timing-function: ease-in-out;
+}
+
+.btn-resume i {
+  margin: 5px;
+  font-size: 15px;
+}
+
+.skills h2,
+.right_column h3 {
+  margin: 10px auto;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "Roboto Mono", monospace;
+  color: var(--blue-color);
+  width: 50%;
+  border-bottom: var(--optional-color) 1px solid;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+.skills ul li {
+  /* list-style-type: square; */
+  margin: 10px auto;
+}
+
+/* skill ends */
+/* Project  Display starts */
+
+.moving_truck_quote {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.project-secttion h3 {
+  font-family: "Roboto Mono", monospace;
+  width: 60%;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+
+.right_column {
+  grid-area: right_column;
+  background-color: white;
+  width: 98%;
+}
+
+.project-images img {
+  outline: black 1px insets;
+  margin-top: 10px;
+  max-width: 310px;
+  width: 100%;
+  height: auto;
+}
+
+h3 i {
+  margin-right: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.description a {
+  width: 100px;
+  background-color: pink;
+  text-align: center;
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 20px;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.description h5 {
+  color: gray;
+  font-size: 1.4em;
+  font-family: var(--content_font);
+  margin: 5px auto;
+  font-weight: bolder;
+}
+
+.description p {
+  color: rgba(15, 11, 11, 0.7);
+  font-family: var(--content_font);
+  font-weight: lighter;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.description dl {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "tech tech tools toos" "techdes techdes toolsdes toolsdes" "techdes techdes toolsdes toolsdes";
+  grid-gap: 10px;
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  row-gap: 20px;
+  column-gap: 10px;
+  background-color: rgb(238, 233, 233);
+  opacity: 0.7;
+  padding: 20px;
+}
+
+.description .tech {
+  grid-area: tech;
+  background-color: palegoldenrod;
+}
+
+.description .tools {
+  grid-area: tools;
+}
+
+dl dt {
+  border-bottom: 1px solid gray;
+}
+
+.toolsdes {
+  margin-left: 10px;
+  grid-area: toolsdes;
+}
+
+.description .techdes {
+  margin-left: 10px;
+  grid-area: techdes;
+}
+
+.spacer {
+  display: inline;
+  background-color: pink;
+}
+
+/* project display ends */
+/* footer */
+
+footer {
+  margin-top: 10px;
+  height: 90px;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.transition {
+  transition: background-color 0.5s;
+}
+
+footer .icons i {
+  color: var(--3r-color);
+  font-size: 1.7rem;
+  padding: 15px;
+  border: 1px solid var(--3r-color);
+  border-radius: 50%;
+  transition: background-color 0.8s;
+}
+
+footer .icons {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer small {
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+  color: wheat;
+  width: 40%;
+  margin: 10px auto;
+}
+
+.icons i:hover {
+  background-color: var(--blue-color);
+}
+
+/* footer ends */
+/* project Display ends */
+
+@media screen and(min-width: 1410px) {
+  body {
+    background-color: yellow;
+  }
+}

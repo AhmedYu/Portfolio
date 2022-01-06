@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ align-items: space-beween;
+ align-content: flex-end;
+  background-color: DodgerBlue;
+}
+.inner-container {
+display: flex;
+flex-flow:  row wrap;
+ 
+align-items: center;
+ 
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.inner-container > div {
+flex: 0 0 200px;
+width: 35%;
+text-align: justify;
+background-color: teal;
+color: white;
+margin: 10px;
+padding: 10px;
+font-size: 1.5rem;
+}
+@media  screen  and (min-width: 1010px){
+div .inner-container {
+background-color: red;
+flex-flow:row nowrap;
+align-items: center;
+justify-content: space-evenly;
+
+}   
+}
+@media  screen  and (max-width: 700px){
+div .inner-container {
+background-color: red;
+ flex-wrap: nowrap;
+ flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+} 
+.inner-container > div {
+    width: 100%;
+    text-align: center;
+}  
+}
+div .inner-child {
+    /* width: 500px; */
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+    
+}
+div .inner-child  button{
+    margin: 10px 30px;
+    background-color: cyan;
+    color: black;
+    font-size: 1.2rem;
+    outline: 1px solid green;
+    border-radius: 10px;
+
+
+}
+</style>
+</head>
+<body>
+
+<h1>Create a Flex Container</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div class="inner-container">
+  <div > inner-container-item1	
+  </div>
+    <div  class="inner-child"> 
+        
+        <button>button 1</button>
+        <button>button 2</button>
+        <button>button 3</button>
+  </div>
+    <div > inner-container-item	3
+  </div>
+  </div>
+  <div>3</div>  
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
+
