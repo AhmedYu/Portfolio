@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoes taken for hobby</title>
-  
+  <?php include_once "Portfolio/links.php";
+  ?>
+    <link rel="stylesheet" href="gallery.css">
+
 </head>
 <body>
     <!-- this will be the navigation with PHp

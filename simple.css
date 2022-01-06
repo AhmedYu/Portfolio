@@ -341,7 +341,9 @@ section .btn-resume:hover {
   margin: 5px;
   font-size: 15px;
 }
-
+p {
+  background-color: red;
+}
 .skills h2,
 .right_column h3 {
   margin: 10px auto;
